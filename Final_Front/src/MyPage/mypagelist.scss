@@ -1,0 +1,81 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+#mypagelist {
+  width: 100%;
+  height: 100vh;
+}
+#mypagelistback {
+  padding-top: 75px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mypagelistbackbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#mypagelistlastback {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  opacity: 0.5;
+}
+
+#mypagelistimgbox {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+}
+#mypagelistimg {
+  width: 100%;
+  height: 100%;
+}
+
+// 글자
+
+#mypagelisttextbox {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#mypgaelisttit {
+  font-size: 60px;
+  letter-spacing: 8px;
+  font-weight: bold;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+#mypgaelistsub {
+  font-size: 16px;
+  color: lightgray;
+  margin-bottom: 120px;
+}

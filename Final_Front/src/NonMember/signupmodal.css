@@ -1,0 +1,67 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+#signupmodal-back {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signupmodal-back2 {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signupmodalbox {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.signupmodal-th {
+  font-size: 16px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+/* signupmodalbox2 스타일 */
+#signupmodalbox2 {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#signupmodaltit {
+  font-size: 20px;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+#signupmodallabel {
+  font-size: 12px;
+  color: var(--gray);
+}
+
+#signupclose {
+  position: absolute;
+  font-size: 40px;
+  color: var(--blue);
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}

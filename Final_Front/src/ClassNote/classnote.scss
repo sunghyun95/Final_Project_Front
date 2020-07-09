@@ -1,0 +1,47 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+#classnote {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#classnoteback {
+  width: 80%;
+  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#classnotebtnbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#classnotebtn {
+  width: 110px;
+  height: 40px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  background-color: var(--white);
+  outline: none;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  cursor: pointer;
+}

@@ -1,0 +1,166 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+// 사이드 바
+#introduceMenu {
+  position: fixed;
+  top: 400px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--white);
+  z-index: 100;
+}
+
+.introMenuColor {
+  color: var(--yellow) !important;
+}
+
+//학원 소개
+#academyLink {
+  color: var(--white);
+  background-color: var(--blue);
+  border-bottom: 1px var(--black);
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all ease-in 200ms;
+  cursor: pointer;
+  #academyLinkmain {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--white);
+  }
+  #academyLinksub {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    display: none;
+    transition: all ease-in 200ms;
+  }
+}
+
+//호버시
+#academyLink:hover {
+  background-color: var(--blue);
+  width: 180px;
+  transition: all ease-out 200ms;
+  cursor: pointer;
+  #academyLinksub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    transition: all ease-out 200ms;
+  }
+}
+
+// 학원 시설
+#introMenu2 {
+  color: var(--white);
+  background-color: var(--blue);
+  border-bottom: 1px var(--black);
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all ease-in 200ms;
+  cursor: pointer;
+  #introMenu2main {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--white);
+  }
+  #introMenu2sub {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    display: none;
+    transition: all ease-in 200ms;
+  }
+}
+
+//호버시
+#introMenu2:hover {
+  background-color: var(--blue);
+  width: 180px;
+  transition: all ease-out 200ms;
+  cursor: pointer;
+  #introMenu2sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    transition: all ease-out 200ms;
+  }
+}
+
+// 오시는길
+#introMenu3 {
+  color: var(--white);
+  background-color: var(--blue);
+  border-bottom: 1px var(--black);
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all ease-in 200ms;
+  cursor: pointer;
+  #introMenu3main {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--white);
+  }
+  #introMenu3sub {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    display: none;
+    transition: all ease-in 200ms;
+  }
+}
+
+//호버시
+#introMenu3:hover {
+  background-color: var(--blue);
+  width: 180px;
+  transition: all ease-out 200ms;
+  cursor: pointer;
+  #introMenu3sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    transition: all ease-out 200ms;
+  }
+}

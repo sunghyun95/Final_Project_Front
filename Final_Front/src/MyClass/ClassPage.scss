@@ -1,0 +1,100 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+#classpage {
+  width: 100%;
+}
+
+#classpageback {
+  padding-top: 75px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+#classpageimgbox {
+  width: 100%;
+  height: 87.6vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+#classpageimg {
+  width: 100%;
+  height: 100%;
+}
+
+#classpagebacknav {
+  width: 100%;
+  height: 87.6vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  background-color: var(--black);
+  opacity: 0.8;
+}
+
+#classpagebacknav2 {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+#classpagebacknav3 {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+}
+
+#classpagetextbox {
+  width: 300px;
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 20px;
+}
+
+.classpagesubbox {
+  height: 30px;
+}
+
+#classdatalinkbox {
+  height: 132px;
+  width: 400px;
+  position: relative;
+}
+
+#classdatalink {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 30px;
+}
+
+#classdatalinkON {
+  color: lightgray;
+}
+
+#classdatalinkON:hover {
+  color: var(--white);
+}

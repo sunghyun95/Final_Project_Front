@@ -1,0 +1,125 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+#studylistcardbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+#studylistcardback {
+  width: 80%;
+  display: flex;
+  align-content: stretch;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+// 카드 기본 사이즈
+#studylistcard {
+  width: 240px;
+  height: 400px;
+  margin: 10px;
+}
+
+//카드 해드 부분
+#studylistcardhd {
+  padding: 0 20px;
+  height: 100px;
+}
+
+#studylistcardtit {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-bottom: 1px solid var(--black);
+  margin-bottom: 10px;
+}
+
+#studylistcardsub {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+//카드 이미지
+#studylistimg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+}
+
+#studylistimgback {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.5;
+}
+#studylistcardmain {
+  height: 250px;
+  position: relative;
+  display: block;
+}
+
+//아바타
+#studylistcardAvatarbox {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  z-index: 4;
+  top: 0;
+}
+
+#studylistcardAvatar {
+  position: absolute;
+  bottom: -40px;
+  left: 80px;
+}
+
+//소개글
+#studylistcardtextbox {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#studylistcardtext {
+  position: relative;
+  z-index: 3;
+  color: var(--white);
+}
+
+//카드 footer
+#studylistfooter {
+  height: 50px;
+  padding: 0;
+}
+
+//눈 + 조회수
+#studylistcardeye {
+  position: absolute;
+  bottom: 0;
+  color: lightgray;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}

@@ -1,0 +1,310 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#main-con {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 51;
+}
+
+.main-slide {
+  display: none;
+}
+
+#slidon {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: bold;
+  align-items: center;
+}
+
+#main-con2 {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 41;
+}
+
+#main-con3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 31;
+  background-color: var(--black);
+}
+
+#main-con4 {
+  background-image: url(../image/100success.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 21;
+  position: relative;
+}
+
+#mainiffoarrowbox {
+  position: fixed;
+  z-index: 800;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+
+/* 화살표 버튼 */
+.mainiffoarrow {
+  font-size: 70px;
+  color: white;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+/* 오른쪽 버튼  */
+#rightbox {
+  z-index: 10;
+  position: fixed;
+  top: 52%;
+  right: 0;
+  width: 50px;
+  height: 20px;
+  background-color: white;
+}
+
+//최초 슬라이드 준비
+.none {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 0 !important;
+  overflow: hidden;
+  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+//슬라이드 내려갈때
+.nonedown {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
+
+//마지막 내려서 처음으로 갈때
+.nonefinal {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
+
+.nonefinal2 {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  transition: all 600ms ease;
+}
+.nonefinal3 {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  transition: all 900ms ease;
+}
+.nonefinal4 {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  transition: all 1200ms ease;
+}
+
+//슬라이드 올라갈때
+.noneUp {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+//첫 화면에서 마지막 화면으로 올라갈때
+.nonefirst {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
+
+.nonefirst2 {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 0 !important;
+  overflow: hidden;
+  transition: all 600ms ease;
+}
+.nonefirst3 {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 0 !important;
+  overflow: hidden;
+  transition: all 900ms ease;
+}
+.nonefirst4 {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 0 !important;
+  overflow: hidden;
+  transition: all 1200ms ease;
+}
+
+// 4번째 화면
+#maincon4back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+#maincon4text {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#maincon4tit {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+
+.maincon4sub {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: lightgrey;
+}
+
+#maincon4cardbox {
+  position: relative;
+  z-index: 6;
+  width: 1000px;
+  height: 430px;
+  margin-top: 60px;
+  // background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+}
+
+#maincon4nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#maincon4sel {
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  line-height: 1.15;
+  text-align: center;
+  outline: none;
+  margin-right: 10px;
+  background-color: transparent;
+  color: var(--white);
+  option {
+    color: var(--black);
+  }
+}
+
+#maincon4arr {
+  font-size: 30px;
+  color: var(--white);
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#maincon4arr2 {
+  font-size: 30px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+#maincon4tab {
+  text-align: center;
+  border-collapse: collapse;
+  th {
+    height: 60px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  td {
+    height: 60px;
+    border-bottom: 1px solid white;
+  }
+}
+
+#maincon4tabtr {
+  th {
+  }
+}

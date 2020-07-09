@@ -1,0 +1,141 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+#classdata {
+  width: 100%;
+}
+
+#classdataback {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 75px;
+  margin-bottom: 80px;
+}
+
+#classdatanav {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+#classdataimgbox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#classdataimg {
+  width: 100%;
+  height: 100%;
+}
+
+#classdataimgback {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  opacity: 0.5;
+}
+
+#classdatatextbox {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#classdatatit {
+  color: var(--white);
+  font-size: 70px;
+  letter-spacing: 8px;
+}
+
+#classdatasub {
+  color: lightgray;
+  font-size: 18px;
+}
+
+// nav2
+#classdatanav2 {
+  width: 60%;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  line-height: 30px;
+  box-shadow: 2px 2px var(--gray);
+  margin-bottom: 30px;
+}
+
+#classdatasubbox {
+  display: flex;
+
+  div {
+    width: 50%;
+  }
+}
+
+// nav3
+#classdatanav3 {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+#classdatabtn {
+  width: 120px;
+  height: 40px;
+  color: var(--black);
+  border: 1px solid var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+// nav4
+#classdatanav4 {
+  width: 80%;
+}
+
+#classdatatab {
+  width: 100%;
+  border-collapse: collapse;
+  th {
+    height: 60px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+
+  td {
+    height: 60px;
+    border-bottom: 1px solid;
+  }
+}

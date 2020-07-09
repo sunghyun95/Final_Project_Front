@@ -1,0 +1,262 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+}
+
+.hid {
+  display: none !important;
+}
+
+#hid {
+  display: none !important;
+}
+#sidmenu {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sidmenunav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sidmenunavafter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+// 강의 박스
+#lecturebox {
+  color: var(--white);
+  background-color: var(--black);
+  border-bottom: 1px var(--black);
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all ease-in 200ms;
+  #lecturemain {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--white);
+  }
+  #lecturesub {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    display: none;
+    transition: all ease-in 200ms;
+  }
+}
+
+//강의 박스 호버시
+#lecturebox:hover {
+  background-color: var(--blue);
+  width: 180px;
+  transition: all ease-out 200ms;
+  #lecturesub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    transition: all ease-out 200ms;
+  }
+}
+
+//스터디 박스
+#studybox {
+  color: var(--white);
+  background-color: var(--black);
+  border-bottom: 1px var(--black);
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all ease-in 200ms;
+  #studymain {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--white);
+  }
+  #studysub {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    display: none;
+    transition: all ease-in 200ms;
+  }
+}
+
+//스터디 박스 호버시
+#studybox:hover {
+  background-color: var(--blue);
+  width: 180px;
+  transition: all ease-out 200ms;
+  #studysub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    transition: all ease-out 200ms;
+  }
+}
+
+//스케줄 박스
+#sidschedulebox {
+  color: var(--white);
+  background-color: var(--black);
+  border-bottom: 1px var(--black);
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all ease-in 200ms;
+  #sidschedulemain {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--white);
+  }
+  #sidschedulesub {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    width: 100px;
+    display: none;
+    transition: all ease-in 200ms;
+  }
+}
+
+//스케줄 박스 호버시
+#sidschedulebox:hover {
+  background-color: var(--blue);
+  width: 180px;
+  transition: all ease-out 200ms;
+  #sidschedulesub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    transition: all ease-out 200ms;
+  }
+}
+
+//차트 박스
+#sidchartbox {
+  color: var(--white);
+  background-color: var(--black);
+  border-bottom: 1px var(--black);
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all ease-in 200ms;
+  #sidchartmain {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--white);
+  }
+  #sidchartsub {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    display: none;
+    transition: all ease-in 200ms;
+  }
+}
+
+//차트 박스 호버시
+#sidchartbox:hover {
+  background-color: var(--blue);
+  width: 180px;
+  transition: all ease-out 200ms;
+  #sidchartsub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    transition: all ease-out 200ms;
+  }
+}
+
+//마이페이지 박스
+#mypagebox {
+  color: var(--white);
+  background-color: var(--black);
+  border-bottom: 1px var(--black);
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all ease-in 200ms;
+  #mypagemain {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--white);
+  }
+  #mypagesub {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    display: none;
+    transition: all ease-in 200ms;
+  }
+}
+
+//차트 박스 호버시
+#mypagebox:hover {
+  background-color: var(--blue);
+  width: 180px;
+  transition: all ease-out 200ms;
+
+  #mypagesub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    transition: all ease-out 200ms;
+  }
+}

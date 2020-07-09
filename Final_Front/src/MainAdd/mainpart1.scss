@@ -1,0 +1,365 @@
+root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+}
+
+#part1back {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#part1videobox {
+  position: absolute;
+  background-color: var(--black);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+// 메인 비디오
+#mainvideo {
+  // width: 100%;
+  height: 200vh;
+  position: relative;
+}
+
+// 텍스트 박스
+#part1con {
+  position: relative;
+  // z-index: 22;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  overflow: hidden;
+  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+//변환 폼
+#part1conAfter {
+  position: relative;
+  // z-index: 22;
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  overflow: hidden;
+  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+// 타이틀
+#part1tit {
+  height: 100px;
+  font-size: 120px;
+  font-weight: bold;
+  color: var(--white);
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#part1sub {
+  font-size: 18px;
+  color: var(--white);
+  letter-spacing: 8px;
+}
+
+#part1sublabel {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6b35;
+}
+
+//2번 박스
+#part1con2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.part1tagbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 40px;
+  cursor: pointer;
+}
+
+.part1tagimgafter {
+  border: 1px solid var(--white);
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: var(--white);
+  color: var(--blue);
+  font-weight: bold;
+}
+.part1tagimg {
+  border: 1px solid var(--white);
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: var(--white);
+}
+
+.part1tagtext {
+  font-size: 12px;
+}
+
+// 클릭시 con4 출력
+#part1con4 {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-color: var(--black);
+  opacity: 0.7;
+  display: block;
+  overflow: hidden;
+  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+//전환이미지
+#part1con4After {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  background-color: var(--black);
+  opacity: 0.7;
+  display: block;
+  overflow: hidden;
+  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+//con4 엑스 표시
+#part1con4x {
+  z-index: 22;
+  position: absolute;
+  color: var(--white);
+  font-size: 40px;
+  top: 0;
+  left: 20px;
+  cursor: pointer;
+}
+
+//클릭시 con3 출력
+#part1con3 {
+  position: relative;
+  z-index: 8;
+  width: 80%;
+  height: 300px;
+  margin-top: 40px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  display: block;
+  transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+  bottom: 0;
+}
+
+// 가로 슬라이더 박스
+#part1slidul {
+  list-style: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 250px;
+  display: flex;
+}
+
+#part1slidul li {
+  display: inline-block;
+  // background-color: var(--teal);
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  margin: 0 20px;
+}
+
+// 하살표
+#part1slidarrow1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  cursor: pointer;
+  // z-index: 22;
+}
+
+#part1slidarrow2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  cursor: pointer;
+  // z-index: 22;
+}
+
+//삽입 이미지
+.part1imgbox {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-size: 200px 200px;
+  // background-image: url("../image/lake.jpg");
+}
+.part1img {
+  position: absolute;
+  // z-index: 90;
+  top: 0;
+
+  width: 200px;
+  height: 200px;
+  border: 0;
+}
+
+.curricard3 {
+  position: relative;
+  display: block;
+  width: 240px;
+  height: 240px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fffffc;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  margin: 10px;
+}
+
+.curricardhd3 {
+  height: 70px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.curricardmain3 {
+  height: 120px;
+  position: relative;
+  display: block;
+}
+
+.curricardmainback3 {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 240px;
+  height: 120px;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.curricardmaintext3 {
+  width: 240px;
+  height: 120px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.curricardmainimgbox3 {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 240px;
+  height: 120px;
+}
+
+.studylistcardAvatar3 {
+  position: absolute;
+  bottom: -20px;
+  left: 100px;
+}
+
+.currifooter3 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  justify-content: flex-end;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+
+.curricarthdtit3 {
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--black);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  width: 100%;
+}
+
+.curricarthdsub3 {
+  font-size: 12px;
+
+  color: rgba(0, 0, 0, 0.54);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}

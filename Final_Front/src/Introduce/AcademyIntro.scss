@@ -1,0 +1,43 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+//기본 위치
+#academyintro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#academyintroback {
+  width: 70%;
+}
+
+#academyintrobox {
+  width: 100%;
+  height: 100vh;
+  padding-top: 75px;
+}
+
+#academyintrobox2 {
+  width: 100%;
+  height: 100vh;
+}
+
+#academyintrobox3 {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

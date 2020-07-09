@@ -1,0 +1,104 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+/* 박스 위치 조정 */
+#singup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#singupback {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#singupsidbox {
+  width: 30%;
+  height: 797px;
+  background-color: var(--blue);
+}
+
+#singuptextbox {
+  width: 69%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#singupback2 {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 타이틀  */
+
+#singuptit {
+  font-size: 20px;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+/* 주소 & 휴대폰 번호 박스 */
+.signupback {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* 경고 문구  */
+
+#signupwarning {
+  margin: 10px 0;
+}
+
+/* 버튼 박스 */
+
+#signupbtnbox {
+  margin-top: 30px;
+}
+
+#signupbtn {
+  margin-right: 20px;
+}
+
+/* 메일 박스  */
+
+.signupboxmail {
+  display: block;
+  color: rgba(0, 0, 0, 87);
+  width: 48%;
+  margin-top: 5px;
+}
+
+.signupemail {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.9;
+  transition: all 0.28s ease;
+  box-shadow: none;
+  border: none;
+  width: 22px;
+  outline: none;
+  position: absolute;
+  right: 70px;
+}

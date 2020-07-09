@@ -1,0 +1,115 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+#curriMenu {
+  position: fixed;
+  top: 400px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: var(--white);
+  z-index: 100;
+}
+
+//수강 일정
+#curriMenunav {
+  color: var(--white);
+  background-color: var(--blue);
+  border-bottom: 1px var(--black);
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all ease-in 200ms;
+  cursor: pointer;
+  #curriMenunavmain {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--white);
+  }
+  #curriMenunavsub {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    display: none;
+    transition: all ease-in 200ms;
+  }
+}
+
+//호버시
+#curriMenunav:hover {
+  background-color: var(--blue);
+  width: 180px;
+  transition: all ease-out 200ms;
+  cursor: pointer;
+  #curriMenunavsub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    transition: all ease-out 200ms;
+  }
+}
+
+//수강 목록
+#curriMenunav2 {
+  color: var(--white);
+  background-color: var(--blue);
+  border-bottom: 1px var(--black);
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all ease-in 200ms;
+  cursor: pointer;
+  #curriMenunav2main {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--white);
+  }
+  #curriMenunav2sub {
+    font-size: 16px;
+    font-weight: bold;
+    height: 60px;
+    display: none;
+    transition: all ease-in 200ms;
+  }
+}
+
+//호버시
+#curriMenunav2:hover {
+  background-color: var(--blue);
+  width: 180px;
+  transition: all ease-out 200ms;
+  cursor: pointer;
+  #curriMenunav2sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    transition: all ease-out 200ms;
+  }
+}

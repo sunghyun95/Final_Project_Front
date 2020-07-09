@@ -1,0 +1,97 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+// 1번 모달
+#signupmanage {
+  left: 50% !important;
+  top: 50% !important;
+  padding: 0 !important;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+}
+
+#signupmanageback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#signupmanagewiht {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  //   align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#signupmanagenav {
+  display: flex;
+  height: 30px;
+}
+
+#signupmanageid {
+  width: 100px;
+}
+
+#signupmanagenav2 {
+  display: flex;
+}
+
+.signupmanagebtn {
+  width: 90px;
+  height: 30px;
+  background-color: var(--white);
+  border-color: var(--blue);
+  color: var(--blue);
+  outline: none;
+  border: 1px solid;
+}
+
+//두번째 모달
+#signupmanage2 {
+  left: 50% !important;
+  top: 50% !important;
+  padding: 0 !important;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+}
+
+#signupmanage2back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#signupmanage2nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#signupmanage2nav2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

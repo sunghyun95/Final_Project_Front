@@ -1,0 +1,38 @@
+:root {
+  --gray: #9e9e9e;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --yellow: #ffe66d;
+}
+
+#mypageMenu {
+  position: fixed;
+  top: 72px;
+  background-color: var(--gray);
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.mypagemenu-link {
+  text-decoration: none;
+  color: var(--white);
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.mypagemenu-link:hover {
+  color: var(--yellow);
+}
+
+.mypagemenu-active {
+  text-decoration: none;
+  color: var(--yellow);
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}

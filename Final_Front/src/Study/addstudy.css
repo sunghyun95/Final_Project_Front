@@ -1,0 +1,21 @@
+#addstudyback2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#addstudyback {
+  margin: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#addstudynomargin {
+  margin: 0;
+}
+#addstudybox {
+  width: 100%;
+}

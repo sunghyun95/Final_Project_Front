@@ -1,0 +1,166 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+//기본 세팅
+#calender {
+  width: 100%;
+  height: 950px;
+  // overflow: hidden;
+  position: relative;
+}
+
+//사라질때
+#calenderOff {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+}
+
+// 헤드 부분
+#calenderhd {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  background-color: var(--black);
+}
+
+.calenderhdbtn {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: 300s;
+  color: var(--gray);
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calenderhdtit {
+  border: none;
+  background-color: transparent;
+  color: var(--white);
+  outline: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+// 요일 박스
+.calenderdaybox {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+}
+
+.calenderday {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--gray);
+  color: var(--dgray);
+
+  &:first-child {
+    color: var(--red);
+  }
+
+  &:last-child {
+    color: var(--blue);
+  }
+}
+
+//날짜 박스
+.calenderdaynumbox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.caldaybox {
+  width: calc(100% / 7);
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  &:first-child {
+    color: var(--red);
+  }
+
+  &:last-child {
+    color: var(--blue);
+  }
+}
+
+.calday {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.daybox {
+  width: calc(100% / 7);
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.dates {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--gray);
+  color: var(--dgray);
+}
+
+.calenderNum0 {
+  color: var(--red);
+}
+
+.calenderNum6 {
+  color: var(--blue);
+}
+
+.others {
+  color: lightgrey;
+}
+//과정별 css
+.bigdata {
+  background-color: var(--red);
+  color: var(--white);
+  border-bottom: 1px solid var(--black);
+  overflow: hidden;
+  font-size: 12px;
+  height: 18px;
+}
+.cloud {
+  background-color: var(--dgray);
+  color: var(--white);
+  border-bottom: 1px solid var(--black);
+  overflow: hidden;
+  font-size: 12px;
+  height: 18px;
+}
+.ai {
+  background-color: var(--blue);
+  color: var(--white);
+  border-bottom: 1px solid var(--black);
+  overflow: hidden;
+  font-size: 12px;
+  height: 18px;
+}

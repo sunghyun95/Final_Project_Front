@@ -1,0 +1,139 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+  --bluesky: #caf0f8;
+}
+
+#curriSch {
+  width: 100%;
+  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+//백 이미지 박스
+#curriSchimgbox {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // visibility: hidden;
+}
+
+#curriSchimg {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+}
+
+#curriSchimgback {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  background-color: var(--blue);
+  opacity: 0.5;
+}
+
+#curriSchimgtextbox {
+  position: relative;
+  z-index: 3;
+}
+
+#curriSchimgtitbox {
+  display: flex;
+  color: var(--white);
+  font-size: 40px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+
+#curriSchimgsubbox {
+  display: flex;
+  flex-direction: column;
+  color: rgb(166, 166, 166);
+  //   justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.margin10 {
+  margin-left: 10px;
+}
+
+#marginbottom10 {
+  margin-bottom: 10px;
+}
+//텍스트 박스
+#curriSchback {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#curriSchnav {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+.curriSchnavbox {
+  margin-right: 70px;
+  cursor: pointer;
+}
+
+//필터 스타일
+.curriSchcercle {
+  width: 80px;
+  height: 80px;
+  border: 1px var(--blue) solid;
+  color: var(--blue);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.currilistAllbox {
+  width: 80px;
+  height: 80px;
+  border: 1px var(--blue) solid;
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.curriSchcerletex {
+  width: 80px;
+  text-align: center;
+}
+
+#curriSchnav2 {
+  width: 80%;
+  position: relative;
+  display: block;
+}

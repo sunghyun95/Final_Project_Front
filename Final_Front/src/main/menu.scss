@@ -1,0 +1,144 @@
+:root {
+  --gray: #9e9e9e;
+  --dgray: #777;
+  --white: #ffffff;
+  --teal: #2a9d8f;
+  --red: #e63946;
+  --blue: rgb(34, 83, 184);
+  --black: rgb(52, 52, 52);
+  --yellow: #ffbe0b;
+  --orange: #ff6b35;
+}
+
+/* 위치 설정 */
+
+#header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  z-index: 100;
+}
+
+#hdback {
+  width: 80%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* hdbox 설정 */
+
+#hdlog {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+/* hdbox2 설정 */
+#hdbox2 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+// 로그인 이후
+#hdbox2after {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#hdspan {
+  font-size: 16px;
+  color: var(--black);
+  font-weight: bold;
+}
+
+#hdlabel {
+  font-size: 25px;
+  color: var(--black);
+  margin-left: 10px;
+}
+
+// 로그인 후 텍스트
+#hdspan {
+  font-size: 12px;
+  margin-left: 20px;
+}
+// 로그인 이후 로그아웃 버튼
+#hdbtnbox {
+  margin-left: 20px;
+}
+
+//로그인 후 사진 아이콘
+#hdafterprofile {
+  margin-left: 20px;
+}
+
+/* 로그인 모달창  */
+
+#loginModal {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 50% !important;
+  top: 50% !important;
+  padding: 0 !important;
+  transform: translate(-50%, -50%);
+  z-index: 99999990;
+}
+
+/* 아이디 비밀번호 찾기 모달창  */
+#findidModal {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 50% !important;
+  top: 50% !important;
+  padding: 0 !important;
+  transform: translate(-50%, -50%);
+}
+
+/* 비밀번호 재설정 모달 */
+
+#PwResetModal {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 50% !important;
+  top: 50% !important;
+  padding: 0 !important;
+  transform: translate(-50%, -50%);
+}
+
+/* 회원가입 모달 */
+#SingUpModal {
+  width: 900px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 50% !important;
+  top: 50% !important;
+  padding: 0 !important;
+  transform: translate(-50%, -50%);
+}
+
+.ReactModalPortal {
+  position: relative;
+  z-index: 9999;
+}
